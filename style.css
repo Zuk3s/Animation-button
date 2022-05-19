@@ -1,0 +1,29 @@
+.burguer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: blue;
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  background-color: #fff;
+  height: 6px;
+  width: 48px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.active .item:nth-child(1) {
+  transform: translateY(12px) rotate(135deg);
+}
+.active .item:nth-child(2) {
+  transform: scale(0);
+}
+.active .item:nth-child(3) {
+  transform: translateY(-16px) rotate(-135deg);
+}
